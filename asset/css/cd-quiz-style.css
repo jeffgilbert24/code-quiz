@@ -1,7 +1,12 @@
 * {
-    background-color: lightslategrey;
+    background-color: rgb(169, 175, 180);
 }
 #section{
-    display: flex;
+    display: inline;
+    text-align: center;
     
+}
+.start{
+    display: inline;
+    margin-left: 650px;
 }
