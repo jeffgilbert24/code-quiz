@@ -6,7 +6,8 @@
     text-align: center;
     
 }
-.start{
+#start{
     display: inline;
+    border: 1px solid darkgreen;
     margin-left: 650px;
 }
