@@ -66,7 +66,10 @@ console.log("randQues", randomQues);
 var questLine = document.querySelector(".question")
 console.log(questLine);
 // start game
-function startQuiz(){
+var startButton = document.querySelector("#start")
+startButton.addEventListener("click", startGame); 
+function startGame(){
+   
     
 }
 
@@ -75,4 +78,26 @@ function startQuiz(){
 //check if answer is correct
 //display right or wrong after the question is answered
 //create timer
+// Selects element by class
+var timeEl = document.querySelector(".time");
+
+// Selects element by id
+var mainEl = document.getElementById("main");
+
+var secondsLeft = 20;
+
+function setTime() {
+  // Sets interval in variable
+  var timerInterval = setInterval(function() {
+    
+    if(secondsLeft === 0) {
+      // Stops execution of action at set interval
+      clearInterval(timerInterval);
+      // Calls function to create and append image
+      sendMessage();
+    }else{
+        secondsLeft--;
+    }
+  }, 1000);
+}
 }
